@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 20px;
+
+    box-shadow: 1px 1px 3px 1px gray;
+
+    font-family: 'Noto Sans HK', sans-serif;
+
+
+}
+
+.logo-section {
+    position: relative;
+    width: 400px;
+
+
+}
+
+.logo-section>img {
+    height: 100%;
+    width: 400px;
+
+}
+
+@media only screen and (max-width: 810px) {
+    .container {
+        flex-direction: column;
+
+    }
+
+    .logo-section {
+        min-width: 100%;
+    }
+
+    .logo-section>img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: 30% 20%;
+
+    }
+
+    .logo-section .logo {
+        left: 0;
+        right: 0;
+        width: calc(100% - 40px) !important;
+
+    }
+
+}
+
+@media only screen and (max-width: 462px) {
+    .logo-section {
+        width: 200px;
+    }
+
+    .logo-section>img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: 30% 20%;
+
+
+    }
+
+    .logo-section .logo {
+        left: 0;
+        right: 0;
+        width: calc(100% - 40px) !important;
+        top: 50px;
+    }
+
+
+}
+
+.logo {
+
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    background-color: rgba(0, 4, 0, 0.7);
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 5rem;
+}
+
+.logo-name {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+.img-credit {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    font-size: 8px;
+
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+
+.img-credit>a {
+    color: #1f232f;
+    text-decoration: underline;
+
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+
+
+    width: 100%;
+
+}
+
+.heading {
+    padding: 30px;
+    background-color: #f9fafc;
+    font-family: 'Noto Sans HK', sans-serif;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.sign-up-para {
+    display: block;
+}
+
+.yk-para {
+    display: block;
+    margin-top: 20px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+
+
+    color: #1f232f;
+
+}
+
+form>p {
+    font-weight: bolder;
+    margin: 10px 0 5px 0;
+    font-size: 22px;
+    padding-left: 50px;
+}
+
+.input-fields-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+
+}
+
+.input-field {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+
+}
+
+label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+input {
+    border: 2px solid #eeeeee;
+    border-radius: 4px;
+    padding: 8px;
+    appearance: none;
+
+}
+
+input:focus {
+
+    outline: none;
+    border: 1px solid #6791e6;
+    box-shadow: 1px 1px 5px 1px rgb(221, 217, 217);
+}
+
+.create-acc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: inset 0px 12px 9px -15px #111;
+    background-color: #f9fafc;
+    padding: 30px 50px;
+}
+
+.sbm-btn {
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    background-color: #30352b;
+    color: #ebe4da;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 0 gray;
+
+}
+
+a {
+    text-decoration: none;
+    color: #648c51;
+    font-weight: bolder;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error:focus {
+    border: 1px solid red;
+}
+
+.error::after {
+    content: "*Passwords do not match";
+}
